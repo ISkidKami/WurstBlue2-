@@ -16,15 +16,15 @@ import java.util.Random;
 public class WurstplusAntiRacist extends WurstplusHack {
 
     /*
-     *    Updated by NathanW because we need to end racism on anarchy servers
+     *    Skidded by me totaly legit ebic module lol
      */
 
-    public WurstplusAntiRacist() {
+    public WurstplusAntiEZZ() {
         super(WurstplusCategory.WURSTPLUS_CHAT);
 
-        this.name = "Anti Racist";
-        this.tag = "AntiRacist";
-        this.description = "i love black squares (circles on the other hand...)";
+        this.name = "No EZ";
+        this.tag = "AntiEz";
+        this.description = "AntiEZ for 2b pvp";
     }
 
     WurstplusSetting delay = create("Delay", "AntiRacistDelay", 10, 0, 100);
@@ -68,8 +68,8 @@ public class WurstplusAntiRacist extends WurstplusHack {
     };
 
 
-    CharSequence nigger = "nigger";
-    CharSequence nigga = "nigga";
+    CharSequence ezz = "ezz";
+    CharSequence ez = "ez";
 
     @Override
     public void update() {
@@ -102,7 +102,7 @@ public class WurstplusAntiRacist extends WurstplusHack {
         return list[r.nextInt(list.length)];
     }
 
-    // Anti n-word
+    // Anti ezz
 
     @EventHandler
     private Listener<WurstplusEventPacket.SendPacket> listener = new Listener<>(event -> {
@@ -115,7 +115,7 @@ public class WurstplusAntiRacist extends WurstplusHack {
 
             String message = ((CPacketChatMessage) event.get_packet()).getMessage().toLowerCase();
 
-            if (message.contains(nigger) || message.contains(nigga)) {
+            if (message.contains(ez) || message.contains(ezz)) {
 
                 String x = Integer.toString((int) (mc.player.posX));
                 String z = Integer.toString((int) (mc.player.posZ));
@@ -123,7 +123,7 @@ public class WurstplusAntiRacist extends WurstplusHack {
                 String coords = x + " " + z;
 
                 message = (random_string(random_correction));
-                mc.player.connection.sendPacket(new CPacketChatMessage("Hi, im at " + coords + ", come teach me a lesson about racism"));
+                mc.player.connection.sendPacket(new CPacketChatMessage("Hi, im at " + coords + ", come teach me a lesson about ezing"));
 
             }
 
