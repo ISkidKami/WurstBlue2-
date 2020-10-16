@@ -22,7 +22,7 @@ public class WurstplusAutoTotem extends WurstplusHack {
 
     private boolean switching = false;
     private int last_slot;
-
+// hi
     @Override
     public void update() {
 
