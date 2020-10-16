@@ -19,7 +19,7 @@ public class WurstplusOffhand extends WurstplusHack {
 
         this.name        = "Offhand";
         this.tag         = "Offhand";
-        this.description = "Switches shit to ur offhand";
+        this.description = "wtf do you think it does???";
     }
 
     WurstplusSetting switch_mode = create("Offhand", "OffhandOffhand", "Totem", combobox("Totem", "Crystal", "Gapple"));
