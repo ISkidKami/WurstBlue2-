@@ -8,9 +8,9 @@ import net.minecraft.init.Items;
 import net.minecraft.inventory.ClickType;
 import net.minecraft.item.Item;
 
-public class WurstplusAutoTotem extends WurstplusHack {
+public class WurstplusAutoOffhandgap extends WurstplusHack {
 
-    public WurstplusAutoTotem() {
+    public WurstplusAutoOffhandgap () {
         super(WurstplusCategory.WURSTPLUS_COMBAT);
 
         this.name        = "GappleOffhand";
